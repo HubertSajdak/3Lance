@@ -1,0 +1,48 @@
+@import './variables';
+
+@mixin section-wrapper {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+@mixin primary-button($bgc-color, $shadow-color) {
+	font-size: 2rem;
+	padding: 1rem 2rem;
+	border: none;
+	border-radius: 8px;
+	color: $color-white;
+	background-color: $bgc-color;
+	box-shadow: $shadow-color;
+	text-decoration: none;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+@mixin play-button {
+	font-size: 2rem;
+	width: 5rem;
+	height: 5rem;
+	border: none;
+	border-radius: 50%;
+	color: $color-white;
+	background-color: $color-button-green;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	transition: 0.3s;
+	cursor: pointer;
+}
+@mixin play-button-small {
+	font-size: 1.5rem;
+	width: 4rem;
+	height: 4rem;
+	border: none;
+	border-radius: 50%;
+	color: $color-white;
+	background-color: $color-button-green;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+@mixin button-hover($bgc-color) {
+	background-color: $bgc-color;
+}
